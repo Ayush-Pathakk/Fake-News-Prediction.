@@ -1,52 +1,80 @@
-#  Diabetes Prediction 🩺
-## Overview
+# Fake News Prediction 📰
+📌 Overview
 
-Diabetes is one of the most common chronic diseases worldwide. Early detection helps in better treatment and lifestyle management.
-This project uses Machine Learning (Support Vector Machine) to predict whether a patient is likely to have diabetes based on diagnostic health data.
+Fake news has become a major concern in today’s digital age, spreading misinformation and influencing public opinion.
+This project uses Machine Learning (Logistic Regression, Passive Aggressive Classifier, etc.) to classify news articles as Real or Fake based on their content.
 
-## Dataset
+📊 Dataset
 
-Source: [Pima Indians Diabetes Dataset – Kaggle/UCI Repository]
+Source: [Fake News Dataset – Kaggle]
 
-Features include: Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Diabetes Pedigree Function, Age.
+Features:
 
-Target Variable: 0 → Non-Diabetic, 1 → Diabetic
+Title of news
 
-## Workflow
+Author
+
+Text (main body of the article)
+
+Target Variable:
+
+0 → Fake News
+
+1 → Real News
+
+⚙️ Workflow
 
 Import libraries & load dataset
 
-Data preprocessing (handling missing values, scaling features)
+Data preprocessing
+
+Handling null/missing values
+
+Text cleaning & normalization
+
+Convert text into numerical representation using TF-IDF Vectorizer
 
 Train-test split
 
-Train model using Support Vector Machine (SVM)
+Train models (Logistic Regression, Passive Aggressive Classifier, etc.)
 
-Evaluate model performance (accuracy score)
+Evaluate model performance using accuracy, precision, recall, F1-score
 
-## Tech Stack
+Compare models and select the best one
+
+🛠️ Tech Stack
 
 Language: Python
 
-Libraries: NumPy, Pandas, Scikit-learn
+Libraries:
 
-## Results
+numpy, pandas → data handling
 
-Model used: Support Vector Machine (SVM)
+scikit-learn → ML models, preprocessing, evaluation
 
-Achieved accuracy: ~[Fill with your output accuracy]
+nltk → natural language processing (tokenization, stopwords removal)
+
+matplotlib, seaborn → visualization
+
+🚀 Results
+
+Best performing model: Logistic Regression
+
+Achieved accuracy: ~[fill with your model accuracy from notebook]
 
 
-## Future Improvements
+📈 Future Improvements
 
-Experiment with additional models (Logistic Regression, Random Forest, XGBoost)
+Try advanced NLP models like LSTM, GRU, or BERT
 
-Perform hyperparameter tuning for SVM
+Improve preprocessing with lemmatization & advanced text cleaning
 
-Deploy model using Streamlit/Flask API for real-world use
+Deploy as a Streamlit/Flask web app for real-time detection
 
-## Acknowledgements
+Integrate with a browser extension for real-world usage
 
-Dataset: Kaggle / UCI ML Repository
+🙌 Acknowledgements
 
-Scikit-learn documentation
+Dataset: Kaggle
+
+Libraries: Scikit-learn, NLTK
