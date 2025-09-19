@@ -1,14 +1,14 @@
 # Fake News Prediction 📰
-📌 Overview
+## Overview
 
 Fake news has become a major concern in today’s digital age, spreading misinformation and influencing public opinion.
 This project uses Machine Learning (Logistic Regression, Passive Aggressive Classifier, etc.) to classify news articles as Real or Fake based on their content.
 
-📊 Dataset
+Dataset
 
 Source: [Fake News Dataset – Kaggle]
 
-Features:
+## Features:
 
 Title of news
 
@@ -22,7 +22,7 @@ Target Variable:
 
 1 → Real News
 
-⚙️ Workflow
+## Workflow
 
 Import libraries & load dataset
 
@@ -42,7 +42,7 @@ Evaluate model performance using accuracy, precision, recall, F1-score
 
 Compare models and select the best one
 
-🛠️ Tech Stack
+## Tech Stack
 
 Language: Python
 
@@ -56,14 +56,14 @@ nltk → natural language processing (tokenization, stopwords removal)
 
 matplotlib, seaborn → visualization
 
-🚀 Results
+## Results
 
 Best performing model: Logistic Regression
 
 Achieved accuracy: ~[fill with your model accuracy from notebook]
 
 
-📈 Future Improvements
+## Future Improvements
 
 Try advanced NLP models like LSTM, GRU, or BERT
 
@@ -73,7 +73,7 @@ Deploy as a Streamlit/Flask web app for real-time detection
 
 Integrate with a browser extension for real-world usage
 
-🙌 Acknowledgements
+## Acknowledgements
 
 Dataset: Kaggle
 
